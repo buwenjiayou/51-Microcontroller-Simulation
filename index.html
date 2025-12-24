@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>51单片机门锁仿真</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Orbitron:wght@400;700;900&family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .lcd-font { font-family: 'JetBrains Mono', monospace; }
+        .key-active:active { transform: scale(0.95); background-color: #e5e7eb; }
+        
+        /* 科技风 - Tech Style */
+        .tech-style {
+            font-family: 'Orbitron', sans-serif;
+            position: relative;
+            color: #1e3a8a; /* Deep Blue (Blue-900) */
+            text-shadow: 0 0 5px rgba(30, 58, 138, 0.3);
+            letter-spacing: 0.2em;
+            display: inline-block;
+            padding: 0.75rem 2.5rem;
+            background: linear-gradient(90deg, transparent, rgba(30, 58, 138, 0.05), transparent);
+            border-bottom: 1px solid rgba(30, 58, 138, 0.2);
+        }
+
+        .tech-style::before, .tech-style::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border: 2px solid #1e3a8a;
+        }
+
+        .tech-style::before {
+            top: 0;
+            left: 0;
+            border-right: 0;
+            border-bottom: 0;
+        }
+
+        .tech-style::after {
+            bottom: 0;
+            right: 0;
+            border-left: 0;
+            border-top: 0;
+        }
+
+        .tech-scanner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: rgba(30, 58, 138, 0.5);
+            animation: scan 3s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes scan {
+            0% { top: 0; opacity: 0; }
+            50% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+
+        /* 机械风格 - Mechanical Style */
+        .mech-style {
+            font-family: 'Black Ops One', cursive;
+            color: #475569;
+            text-shadow: 1px 1px 0px #cbd5e1, 2px 2px 0px #94a3b8;
+            letter-spacing: 0.05em;
+        }
+
+        /* Custom scrollbar for logs */
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-100 text-slate-900">
+    <div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "51 MCU Smart Door Lock Simulator",
+  "description": "A web-based simulation of a fingerprint and password door lock system based on 51 MCU logic, featuring 12864 LCD simulation, matrix keypad, and peripheral controls.",
+  "requestFramePermissions": []
+}
