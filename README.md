@@ -7,7 +7,7 @@
 </p>
 <p align="center">
   <!-- TODO: Replace links -->
-  <a href="https://51-simulator-buwenjiayou.netlify.app">Live Demo</a>
+  <a href="https://51-design-project.netlify.app/">Live Demo</a>
 </p>
 <p align="center">
   <!-- Badges (optional) -->
